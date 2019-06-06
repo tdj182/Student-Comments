@@ -1,0 +1,140 @@
+/**********************************************
+*** GENERAL
+**********************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  font-family: Open Sans;
+  font-size: 16px;
+  position: relative;
+  height: 100vh;
+  font-weight: 400;
+  background: whitesmoke;
+}
+
+.outline {
+  border: red solid 1px;
+}
+/*****************************************
+*** STUFF
+******************************************/
+
+.big_container {
+  margin: 15px;
+}
+.intro_area {
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; */
+}
+
+.intro_wrap {
+  padding-right: 10px;
+}
+
+.sections_area {
+  margin-top: 10px;
+}
+
+#student-comment {
+  width: 500px;
+  height: 80%;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+}
+
+.name_area {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.students_name {
+  font-size: 1.2rem;
+}
+
+button {
+  padding: 10px;
+}
+
+select {
+  margin-left: 15px;
+  /* margin-top: 5px; */
+  position: relative;
+  font-size: 1.2rem;
+  /* left: 200px; */
+}
+
+.students_gender {
+  margin-top: 2px;
+}
+
+.subject_rating {
+  margin-bottom: 5px;
+}
+.subject,
+.custom {
+  position: center;
+  padding-left: 15px;
+  margin: 0px 0;
+  font-size: 1.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin: 10px 5px 0 10px;
+}
+
+.bottom {
+  margin-left: 15px;
+  /* position: relative; */
+}
+
+.warning {
+  color: red;
+  font-size: 25px;
+}
+
+.btn_shh {
+  position: fixed;
+  opacity: 0;
+  bottom: 0;
+  right: 50px;
+}
+
+#subjects-comment {
+  display: flex;
+}
+
+@media (max-width: 950px) {
+  #subjects-comment {
+    display: flex;
+    flex-direction: column;
+  }
+  #student-comment {
+    width: 70%;
+    height: 200px;
+  }
+
+  .subjects_area {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+}
